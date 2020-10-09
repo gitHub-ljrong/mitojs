@@ -19,8 +19,8 @@ const esmPackage = {
     }),
     json(),
     typescript({
-      useTsconfigDeclarationDir: true,
-      declarationDir: 'dist/types/'
+      useTsconfigDeclarationDir: true
+      // declarationDir: 'dist/types/'
     })
   ]
 }
@@ -98,4 +98,5 @@ if (ignore) {
 if (include) {
   result = [total[include]]
 }
+console.log(result)
 export default [...Object.values(result)]
